@@ -1,0 +1,16 @@
+node_modules
+dist
+out
+.turbo
+*.log
+.env
+.env.local
+.env.*.local
+.DS_Store
+Thumbs.db
+*.db
+*.db-journal
+coverage
+.vscode/*
+!.vscode/extensions.json
+!.vscode/settings.json

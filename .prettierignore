@@ -1,0 +1,8 @@
+node_modules
+dist
+out
+.turbo
+generated
+package-lock.json
+*.db
+*.db-journal
