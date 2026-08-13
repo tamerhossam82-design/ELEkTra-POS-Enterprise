@@ -63,4 +63,12 @@ export const en = {
   },
 } as const;
 
-export type TranslationKeys = typeof en;
+type TranslationShape<T> = {
+  [K in keyof T]: T[K] extends string
+    ? string
+    : T[K] extends object
+      ? TranslationShape<T[K]>
+      : T[K];
+};
+
+export type TranslationKeys = TranslationShape<typeof en>;

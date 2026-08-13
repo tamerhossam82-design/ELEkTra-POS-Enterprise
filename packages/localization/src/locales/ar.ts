@@ -2,7 +2,7 @@ import type { TranslationKeys } from './en.js';
 
 export const ar: TranslationKeys = {
   common: {
-    appName: 'إلكترا POS Enterprise',
+    appName: 'ELEKTECH MT POS',
     search: 'بحث...',
     save: 'حفظ',
     cancel: 'إلغاء',
@@ -10,6 +10,7 @@ export const ar: TranslationKeys = {
     noResults: 'لا توجد نتائج',
     viewAll: 'عرض الكل',
   },
+
   auth: {
     login: 'تسجيل الدخول',
     logout: 'تسجيل الخروج',
@@ -21,6 +22,7 @@ export const ar: TranslationKeys = {
     invalidCredentials: 'اسم المستخدم أو كلمة المرور غير صحيحة',
     loginSuccess: 'تم تسجيل الدخول بنجاح',
   },
+
   nav: {
     dashboard: 'لوحة التحكم',
     pos: 'نقطة البيع',
@@ -31,6 +33,7 @@ export const ar: TranslationKeys = {
     settings: 'الإعدادات',
     users: 'المستخدمون',
   },
+
   dashboard: {
     title: 'لوحة التحكم',
     todaySales: 'مبيعات اليوم',
@@ -48,16 +51,19 @@ export const ar: TranslationKeys = {
     vsYesterday: 'مقارنة بالأمس',
     unitsSold: 'وحدة مباعة',
   },
+
   theme: {
     light: 'فاتح',
     dark: 'داكن',
     toggle: 'تبديل المظهر',
   },
+
   language: {
     en: 'English',
     ar: 'العربية',
     switch: 'تغيير اللغة',
   },
+
   notifications: {
     title: 'الإشعارات',
     empty: 'لا توجد إشعارات جديدة',

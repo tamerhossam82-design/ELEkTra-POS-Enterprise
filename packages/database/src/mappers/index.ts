@@ -1,6 +1,4 @@
-import type { User, UserWithRole, RoleWithPermissions, Permission } from '@elektra/shared';
-import type { PrismaClient } from './client.js';
-
+﻿import type { User, UserWithRole, RoleWithPermissions, Permission } from '@elektra/shared';
 type DbUser = {
   id: string;
   username: string;
@@ -29,7 +27,6 @@ type DbUser = {
     }>;
   };
 };
-
 export function mapPermission(p: DbUser['role']['permissions'][0]['permission']): Permission {
   return {
     id: p.id,
@@ -39,7 +36,6 @@ export function mapPermission(p: DbUser['role']['permissions'][0]['permission'])
     description: p.description,
   };
 }
-
 export function mapRoleWithPermissions(role: DbUser['role']): RoleWithPermissions {
   return {
     id: role.id,
@@ -51,7 +47,6 @@ export function mapRoleWithPermissions(role: DbUser['role']): RoleWithPermission
     permissions: role.permissions.map((rp) => mapPermission(rp.permission)),
   };
 }
-
 export function mapUser(user: DbUser): UserWithRole {
   return {
     id: user.id,
@@ -66,7 +61,6 @@ export function mapUser(user: DbUser): UserWithRole {
     role: mapRoleWithPermissions(user.role),
   };
 }
-
 export function mapSimpleUser(user: Omit<DbUser, 'role'>): User {
   return {
     id: user.id,
@@ -80,7 +74,6 @@ export function mapSimpleUser(user: Omit<DbUser, 'role'>): User {
     updatedAt: user.updatedAt,
   };
 }
-
 export const userInclude = {
   role: {
     include: {
@@ -88,5 +81,3 @@ export const userInclude = {
     },
   },
 } as const;
-
-export type { PrismaClient };

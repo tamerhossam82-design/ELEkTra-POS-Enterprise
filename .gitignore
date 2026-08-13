@@ -14,3 +14,9 @@ coverage
 .vscode/*
 !.vscode/extensions.json
 !.vscode/settings.json
+
+# TypeScript build metadata
+*.tsbuildinfo
+
+# Generated Prisma client
+packages/database/src/generated/

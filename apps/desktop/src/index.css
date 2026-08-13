@@ -1,4 +1,4 @@
-import '@elektra/ui/src/styles/globals.css';
+@import '@elektra/ui/styles.css';
 
 @tailwind base;
 @tailwind components;
