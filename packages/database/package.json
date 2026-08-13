@@ -13,6 +13,7 @@
   },
   "scripts": {
     "build": "tsc",
+    "postbuild": "prisma generate && node scripts/copy-generated.mjs",
     "dev": "tsc --watch",
     "lint": "eslint src/",
     "lint:fix": "eslint src/ --fix",

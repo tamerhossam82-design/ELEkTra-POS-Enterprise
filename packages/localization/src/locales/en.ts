@@ -1,6 +1,6 @@
 export const en = {
   common: {
-    appName: 'ELEkTra POS Enterprise',
+    appName: 'ELEKTECH MT POS',
     search: 'Search...',
     save: 'Save',
     cancel: 'Cancel',
